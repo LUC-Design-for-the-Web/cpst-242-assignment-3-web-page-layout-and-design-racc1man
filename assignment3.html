@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--Rocio Chavez-->
+<html lang="en">
+    <head>
+       
+        <title>Ily's Boutique</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ily's Homepage with fashion styles and prices">
+        <meta name="keywords" content="woman's clothing, dresses, skirts, blouses, and pants">
+        <meta name="author" content="Rocio Chavez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"rel="stylesheet">
+
+     <!--color schemes
+        <li>The color scheme was decided based on some of my favorite colors.</li>
+        <li> I will be using the monochromatic and the tetradic color palletes. I will apply the hexadecimals value of 7E5395 color to the bottom of my logo and to the navigation items when hovering over them. In addition, I will apply the hexadecimal value of DC88AF to the body of the webpage which will also inlcude the background images.<li>
+        
+    
+                 
+        <!--fonts 
+            <li> I will be using the font family Montserrat, sans-serif for the body and sunday donut in script handwitten for the about us, live chat, and home navigation.</li>
+        <li> I will be using fonts sizes 40px and 60px with weight of bold for the navigation icons.</li>
+        <li>I don't really don't have any paragraphs or headings so, I really don't know.</li>
+        -->
+       
+        
+     <!--Internal CSS-->
+   
+  <style>
+   
+
+    <!--this will be the fonts for the body-->
+
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    }
+ 
+header img{ 
+    display: block;
+    width: 30%;
+    margin: auto;     
+}
+    
+
+     <!--this will be the font for the home navigation-->
+
+header nav{
+    font-display: left;
+    font-family: script handwritten;
+    font-size: 40px;
+    font-weight: bold;;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7e5395;
+}
+
+
+#container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 105px auto auto auto 15%;
+        grid-template-areas: " head head head"
+                             " main main main"
+                             "foot foot foot";
+                                                
+        width: 100vw; 
+        height: 100vh;
+       }
+
+       #container aside{
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 325px; 
+            height: 350px;
+            padding: 10px;
+            margin-top: 4%; 
+            margin-bottom: 4%; 
+            margin-right: 2%; 
+            margin-left: 2%;
+            background-color: #ffffffcf;
+            border-radius: 10px;
+       }
+
+      
+       header{
+            grid-area: head;
+       }   
+
+      #flexcontainer{
+            display: flex;
+            grid-area: main;
+            flex-wrap: wrap;
+            width: 100%;
+            background-image: url(./img/collection-sketches.jpg);
+            background-color:pink;
+            background-position: center center;
+            background-size: cover;
+       }     
+
+       footer{
+            grid-area: foot;
+            padding-top: 40px;
+        }
+
+       #copyright{
+            width: 275px;
+            margin: auto;
+       }
+
+       <!--this will be the font for the contact us, about us, and live chat navigations-->  
+       
+       #contact us{ 
+            font-display: left;
+            width: 275px;
+            font-size: 60px;
+            font-family: script handwritten;
+            font-weight: bold;
+       }
+           
+/* mouse over link */
+a:hover {
+  color: #7e5395;
+}
+
+       #about us{
+            font-display: left;
+            width: 275px;
+            font-size: 60px;
+            font-family: script handwritten;
+            font-weight: bold;
+       }
+      
+/* mouse over link */
+a:hover {
+  color: #7e5395;
+}
+
+        #live chat{
+            font-display: right;
+            width: 275px;
+            font-size: 60px;
+            font-family: script handwritten;
+            font-weight: bold;
+        }           
+        
+/* mouse over link */
+a:hover {
+  color: #7e5395;
+}
+        </style>
+       
+    </head>
+    <body>
+       
+        <div id="container"> <!--grid container-->
+            <!--grid items-->
+           
+            <header>
+                <img src="img/Ily's logo.jpg" alt="name logo">
+
+                 
+                 <ul>
+                    <li><a href="#home">Home</a></li>
+                    <i class="fas fa-bars"></i>
+                 <i class="fas fa-bars" style="font-size:36px;"></i>
+                </ul>
+                 <!--External CSS File-->
+     
+           
+    </header>
+            <main id="flexcontainer">
+                
+                <aside><h2><img src="" alt=""></h2> 
+                 </aside>
+                    <aside>
+                    <h2><img src="" alt=""></h2>
+                </aside>
+                <aside>
+                    <h2><img src="" alt=""></h2>
+                </aside>
+                <aside>
+                    <h2><img src="" alt=""></h2>
+                </aside>
+                <aside>
+                    <h2><img src="" alt=""></h2>
+                </aside>
+                <aside>
+                    <h2><img src="" alt=""></h2>
+                </aside>
+            </main>
+            <footer>
+                <div id="Copyright">&#169;  2023 Ilyanie's Boutique</div>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#live chat">live chat</a></li>
+                  </ul>
+            </footer>
+        </div>
+    </body>
+</html>
